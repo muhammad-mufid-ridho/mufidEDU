@@ -1,0 +1,162 @@
+/* 
+ROOT
+*/
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+
+:root {
+  --green: #c3ffd2;
+  --dark: #0d0c22;
+  --blue: #aee5ff;
+  --white: #faf7eeff;
+}
+
+body {
+  margin: 0 5% 0 5%;
+  position: relative;
+  background-color: var(--white);
+}
+
+ul {
+  display: flex;
+  list-style: none;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--dark);
+}
+
+/* 
+Navbar
+*/
+
+nav {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 99;
+}
+
+nav .wrapper-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+  align-items: center;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: larger;
+}
+
+.wrapper-nav ul li {
+  margin: 0 calc(1vw + 5px);
+}
+
+.wrapper-nav ul li a:hover {
+  font-weight: bold;
+  transition: 0.2s;
+}
+
+.register-button {
+  padding: 5px 20px;
+  background-color: var(--dark);
+  border-radius: 15px;
+}
+
+.register-button:hover {
+  transform: scale(1.2);
+  transition: 0.1s;
+  background-color: var(--green);
+  color: var(--dark);
+  border: #0d0c22 1px solid;
+  color: var(--dark);
+}
+
+.register-button a {
+  text-decoration: none;
+  color: white;
+}
+
+.register-button a:hover {
+  color: var(--dark);
+}
+
+/* 
+* Jumbotron
+*/
+
+header {
+  position: relative;
+}
+
+.wraper-jumbotron {
+  position: absolute;
+  width: 100%;
+  display: flex;
+}
+
+.jumbotron-info {
+  width: 50%;
+}
+
+.jumbotron-info h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 3.5vw;
+}
+
+.jumbotron-img {
+  width: 50%;
+}
+
+.jumbotron-btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+}
+
+.button-learmore {
+  padding: 15px 25px;
+  background-color: var(--dark);
+  border-radius: 25px;
+}
+
+.fa-arrow-right {
+  color: var(--dark);
+  background-color: var(--white);
+  padding: 5px;
+  border-radius: 100%;
+}
+
+.button-learmore a {
+  color: var(--white);
+}
+
+.students-all{
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.jumbotron-mitras-logo{
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.jumbotron-mitras-logo i{
+  width: 90px;
+}
