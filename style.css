@@ -8,7 +8,7 @@ html {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto";
+  font-family: "Poppins";
 }
 
 :root {
@@ -38,6 +38,15 @@ a {
   color: var(--dark);
 }
 
+h2 {
+  font-weight: 600;
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
 /* 
 Navbar
 */
@@ -47,6 +56,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 99;
+  background-color: var(--white);
 }
 
 nav .wrapper-nav {
@@ -102,10 +112,13 @@ header {
   position: relative;
 }
 
-.wraper-jumbotron {
-  position: absolute;
+.wrapper-jumbotron {
   width: 100%;
   display: flex;
+}
+
+.wrapper-jumbotron p {
+  margin-bottom: 50px;
 }
 
 .jumbotron-info {
@@ -123,7 +136,7 @@ header {
 
 .jumbotron-btn {
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: space-between;
   width: 70%;
 }
@@ -145,18 +158,219 @@ header {
   color: var(--white);
 }
 
-.students-all{
+.students-all {
   font-size: 2rem;
   font-weight: bold;
   margin: 0;
 }
 
-.jumbotron-mitras-logo{
+.jumbotron-mitras-logo {
   display: flex;
   justify-content: space-between;
+  width: 70%;
+  bottom: 0;
+}
+
+.jumbotron-mitras-logo i {
+  font-size: 3vw;
+}
+
+/* 
+*Section 1
+*/
+
+.section-1 {
+  height: 100vh;
+  width: 100%;
+  margin: 50px 0;
+  display: flex;
+  align-items: center;
+}
+.section-1 .wrapper {
+  margin: auto;
+}
+
+.section-1 .wrapper .text-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3%;
+}
+
+.text-heading .left {
+  font-size: 1.3rem;
+}
+
+.text-heading .right {
+  width: 20%;
+}
+
+.reg-button {
+  background-color: var(--dark);
+  color: var(--white);
+  padding: 7% 3%;
+  border-radius: 2rem;
+  font-size: 0.8em;
+  margin-top: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+.reg-button a {
+  color: var(--white);
+  margin-right: 5px;
+}
+
+.cards {
+  display: flex;
+  height: fit-content;
+  justify-content: space-between;
+}
+
+.card-1 {
+  padding: 35px;
+  left: 0;
+  width: 35%;
+  background-color: var(--blue);
+  border-radius: 25px;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.card-1 h2 {
+  margin: 5% 0;
+}
+
+.card-2 {
+  padding: 35px;
+  width: 60%;
+  background-color: var(--green);
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.fa-school {
+  width: fit-content;
+  padding: 30px;
+  background-color: orange;
+  border-radius: 100%;
+}
+
+.fa-rainbow {
+  width: fit-content;
+  padding: 30px;
+  background-color: greenyellow;
+  border-radius: 100%;
+}
+
+.list-cards {
+  display: flex;
+  justify-content: space-between;
+  margin: 3% 0;
+}
+
+.list-cards-items {
+  width: 80%;
+}
+
+.list-cards-items ul {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.list-cards li {
+  background-color: rgba(0, 0, 0, 0.05);
+  padding: 15px;
+  border-radius: 15px;
+}
+
+/* 
+* FOOTER
+*/
+
+footer {
+  height: 70vh;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+footer a {
+  color: var(--white);
+}
+
+footer .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  background-color: var(--dark);
+  color: var(--white);
+  text-align: center;
+  border-radius: 50px;
+}
+
+.wrapper .content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+}
+
+.content-1 h2 {
+  font-size: 2.3rem;
+}
+
+.content-1 p {
+  font-size: 1rem;
+}
+
+.content-1 .input {
+  height: 70px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.input input {
+  height: 100%;
+  width: 90%;
+  border-radius: 25px;
+  padding: 0px 15px;
+}
+
+.content-1 .input button {
+  top: 10%;
+  right: 5%;
+  width: 20%;
+  height: 80%;
+  position: absolute;
+  background-color: var(--dark);
+  color: white;
+  border-radius:25px;
+  cursor: pointer;
+}
+
+button i{
+  margin-left: 15px;
+}
+
+.content-2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  font-size: .8rem;
+}
+
+.content-2 .menus{
   width: 50%;
 }
 
-.jumbotron-mitras-logo i{
-  width: 90px;
+.content-2 .menus ul{
+  display: flex;
+  justify-content: space-evenly; 
 }
